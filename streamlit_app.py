@@ -202,11 +202,11 @@ with st.sidebar:
     st.markdown(
         "For more information about CrewAI, see [here](https://github.com/joaomdmoura/crewAI)."
     )
-    mistral_key=mistral_key
+    mistral_key=st.secrets["mistral_key"]
     Mixtral_llm = ChatMistralAI(mistral_api_key=mistral_key, model="open-mixtral-8x7b",temperature=model_temp,verbose=True)
     Mistral7B_llm = ChatMistralAI(mistral_api_key=mistral_key, model="open-mistral-7b",temperature=model_temp,verbose=True)
 
-    GoogleGemini_llm = ChatGoogleGenerativeAI(model="gemini-pro",temperature=model_temp, google_api_key=GOOGLE_API_KEY,verbose=True)
+    GoogleGemini_llm = ChatGoogleGenerativeAI(model="gemini-pro",temperature=model_temp, google_api_key=st.secrets["GOOGLE_API_KEY"],verbose=True)
 
     ClaudeHaiku_llm = ChatAnthropic(model_name='claude-3-haiku-20240307',temperature=model_temp,verbose=True)
     ClaudeSonnet_llm = ChatAnthropic(model_name='claude-3-sonnet-20240229',temperature=model_temp,verbose=True)

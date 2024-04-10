@@ -2,3 +2,12 @@ altair
 pandas
 streamlit
 langchain
+crewai
+langchain
+unstructured
+langchain_mistralai
+langchain_google_genai
+langchain_anthropic
+crewai_tools
+streamlit-quill
+bs4

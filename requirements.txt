@@ -11,3 +11,4 @@ langchain_anthropic
 crewai_tools
 streamlit-quill
 bs4
+pysqlite3-binary
